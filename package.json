@@ -1,0 +1,20 @@
+{
+  "name": "Bucks2Bar",
+  "version": "1.0.0",
+  "description": "A project for Bucks2Bar using Bootstrap.",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "live-server public",
+    "build-css": "node-sass scss/styles.scss public/assets/css/styles.css",
+    "watch-css": "node-sass --watch scss/styles.scss public/assets/css/styles.css"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.0",
+    "live-server": "^1.2.1"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

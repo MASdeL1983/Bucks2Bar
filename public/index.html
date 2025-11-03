@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <title>Bucks2Bar</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-2" href="#">Bucks2Bar</a>
+        </div>
+    </nav>
+  <main class="container mt-4">
+    <input type="text" id="username" class="form-control" placeholder="Enter your username" />
+    <h1>Welcome to Bucks2Bar</h1>
+    <h2> The best platform to track your income and expenses.</h2>
+    <!-- Paste into your page that loads Bootstrap 5 CSS & JS -->
+<nav>
+  <div class="nav nav-tabs" id="myTab" role="tablist">
+    <button class="nav-link active" id="data-tab" data-bs-toggle="tab" data-bs-target="#data" type="button" role="tab" aria-controls="data" aria-selected="true">
+      Data
+    </button>
+    <button class="nav-link" id="chart-tab" data-bs-toggle="tab" data-bs-target="#chart" type="button" role="tab" aria-controls="chart" aria-selected="false">
+      Chart
+    </button>
+  </div>
+</nav>
+
+<div class="tab-content" id="myTabContent">
+  <!-- DATA tab pane: contains only the month inputs -->
+  <div class="tab-pane fade show active p-3" id="data" role="tabpanel" aria-labelledby="data-tab">
+    <div class="row g-3">
+    <!-- January -->
+    <div class="col-12 col-md-6">
+      <div class="p-3 border rounded h-100">
+        <h3 class="h5">January</h3>
+        <div class="row g-2 align-items-end">
+          <div class="col-6">
+            <label for="jan-income" class="form-label visually-hidden">Income</label>
+            <div class="input-group">
+              <span class="input-group-text">Income</span>
+              <input id="jan-income" type="number" class="form-control" placeholder="0.00" aria-label="January income" />
+            </div>
+          </div>
+          <div class="col-6">
+            <label for="jan-expenses" class="form-label visually-hidden">Expenses</label>
+            <div class="input-group">
+              <span class="input-group-text">Expenses</span>
+              <input id="jan-expenses" type="number" class="form-control" placeholder="0.00" aria-label="January expenses" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- February -->
+    <div class="col-12 col-md-6">
+      <div class="p-3 border rounded h-100">
+        <h3 class="h5">February</h3>
+        <div class="row g-2 align-items-end">
+          <div class="col-6">
+            <label for="feb-income" class="form-label visually-hidden">Income</label>
+            <div class="input-group">
+              <span class="input-group-text">Income</span>
+              <input id="feb-income" type="number" class="form-control" placeholder="0.00" aria-label="February income" />
+            </div>
+          </div>
+          <div class="col-6">
+            <label for="feb-expenses" class="form-label visually-hidden">Expenses</label>
+            <div class="input-group">
+              <span class="input-group-text">Expenses</span>
+              <input id="feb-expenses" type="number" class="form-control" placeholder="0.00" aria-label="February expenses" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- March -->
+    <div class="col-12 col-md-6">
+      <div class="p-3 border rounded h-100">
+        <h3 class="h5">March</h3>
+        <div class="row g-2 align-items-end">
+          <div class="col-6">
+            <label for="mar-income" class="form-label visually-hidden">Income</label>
+            <div class="input-group">
+              <span class="input-group-text">Income</span>
+              <input id="mar-income" type="number" class="form-control" placeholder="0.00" aria-label="March income" />
+            </div>
+          </div>
+          <div class="col-6">
+            <label for="mar-expenses" class="form-label visually-hidden">Expenses</label>
+            <div class="input-group">
+              <span class="input-group-text">Expenses</span>
+              <input id="mar-expenses" type="number" class="form-control" placeholder="0.00" aria-label="March expenses" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- April -->
+    <div class="col-12 col-md-6">
+      <div class="p-3 border rounded h-100">
+        <h3 class="h5">April</h3>
+        <div class="row g-2 align-items-end">
+          <div class="col-6">
+            <label for="apr-income" class="form-label visually-hidden">Income</label>
+            <div class="input-group">
+              <span class="input-group-text">Income</span>
+              <input id="apr-income" type="number" class="form-control" placeholder="0.00" aria-label="April income" />
+            </div>
+          </div>
+          <div class="col-6">
+            <label for="apr-expenses" class="form-label visually-hidden">Expenses</label>
+            <div class="input-group">
+              <span class="input-group-text">Expenses</span>
+              <input id="apr-expenses" type="number" class="form-control" placeholder="0.00" aria-label="April expenses" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- May -->
+    <div class="col-12 col-md-6">
+      <div class="p-3 border rounded h-100">
+        <h3 class="h5">May</h3>
+        <div class="row g-2 align-items-end">
+          <div class="col-6">
+            <label for="may-income" class="form-label visually-hidden">Income</label>
+            <div class="input-group">
+              <span class="input-group-text">Income</span>
+              <input id="may-income" type="number" class="form-control" placeholder="0.00" aria-label="May income" />
+            </div>
+          </div>
+          <div class="col-6">
+            <label for="may-expenses" class="form-label visually-hidden">Expenses</label>
+            <div class="input-group">
+              <span class="input-group-text">Expenses</span>
+              <input id="may-expenses" type="number" class="form-control" placeholder="0.00" aria-label="May expenses" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- June -->
+    <div class="col-12 col-md-6">
+      <div class="p-3 border rounded h-100">
+        <h3 class="h5">June</h3>
+        <div class="row g-2 align-items-end">
+          <div class="col-6">
+            <label for="jun-income" class="form-label visually-hidden">Income</label>
+            <div class="input-group">
+              <span class="input-group-text">Income</span>
+              <input id="jun-income" type="number" class="form-control" placeholder="0.00" aria-label="June income" />
+            </div>
+          </div>
+          <div class="col-6">
+            <label for="jun-expenses" class="form-label visually-hidden">Expenses</label>
+            <div class="input-group">
+              <span class="input-group-text">Expenses</span>
+              <input id="jun-expenses" type="number" class="form-control" placeholder="0.00" aria-label="June expenses" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- July -->
+    <div class="col-12 col-md-6">
+      <div class="p-3 border rounded h-100">
+        <h3 class="h5">July</h3>
+        <div class="row g-2 align-items-end">
+          <div class="col-6">
+            <label for="jul-income" class="form-label visually-hidden">Income</label>
+            <div class="input-group">
+              <span class="input-group-text">Income</span>
+              <input id="jul-income" type="number" class="form-control" placeholder="0.00" aria-label="July income" />
+            </div>
+          </div>
+          <div class="col-6">
+            <label for="jul-expenses" class="form-label visually-hidden">Expenses</label>
+            <div class="input-group">
+              <span class="input-group-text">Expenses</span>
+              <input id="jul-expenses" type="number" class="form-control" placeholder="0.00" aria-label="July expenses" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- August -->
+    <div class="col-12 col-md-6">
+      <div class="p-3 border rounded h-100">
+        <h3 class="h5">August</h3>
+        <div class="row g-2 align-items-end">
+          <div class="col-6">
+            <label for="aug-income" class="form-label visually-hidden">Income</label>
+            <div class="input-group">
+              <span class="input-group-text">Income</span>
+              <input id="aug-income" type="number" class="form-control" placeholder="0.00" aria-label="August income" />
+            </div>
+          </div>
+          <div class="col-6">
+            <label for="aug-expenses" class="form-label visually-hidden">Expenses</label>
+            <div class="input-group">
+              <span class="input-group-text">Expenses</span>
+              <input id="aug-expenses" type="number" class="form-control" placeholder="0.00" aria-label="August expenses" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- September -->
+    <div class="col-12 col-md-6">
+      <div class="p-3 border rounded h-100">
+        <h3 class="h5">September</h3>
+        <div class="row g-2 align-items-end">
+          <div class="col-6">
+            <label for="sep-income" class="form-label visually-hidden">Income</label>
+            <div class="input-group">
+              <span class="input-group-text">Income</span>
+              <input id="sep-income" type="number" class="form-control" placeholder="0.00" aria-label="September income" />
+            </div>
+          </div>
+          <div class="col-6">
+            <label for="sep-expenses" class="form-label visually-hidden">Expenses</label>
+            <div class="input-group">
+              <span class="input-group-text">Expenses</span>
+              <input id="sep-expenses" type="number" class="form-control" placeholder="0.00" aria-label="September expenses" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- October -->
+    <div class="col-12 col-md-6">
+      <div class="p-3 border rounded h-100">
+        <h3 class="h5">October</h3>
+        <div class="row g-2 align-items-end">
+          <div class="col-6">
+            <label for="oct-income" class="form-label visually-hidden">Income</label>
+            <div class="input-group">
+              <span class="input-group-text">Income</span>
+              <input id="oct-income" type="number" class="form-control" placeholder="0.00" aria-label="October income" />
+            </div>
+          </div>
+          <div class="col-6">
+            <label for="oct-expenses" class="form-label visually-hidden">Expenses</label>
+            <div class="input-group">
+              <span class="input-group-text">Expenses</span>
+              <input id="oct-expenses" type="number" class="form-control" placeholder="0.00" aria-label="October expenses" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- November -->
+    <div class="col-12 col-md-6">
+      <div class="p-3 border rounded h-100">
+        <h3 class="h5">November</h3>
+        <div class="row g-2 align-items-end">
+          <div class="col-6">
+            <label for="nov-income" class="form-label visually-hidden">Income</label>
+            <div class="input-group">
+              <span class="input-group-text">Income</span>
+              <input id="nov-income" type="number" class="form-control" placeholder="0.00" aria-label="November income" />
+            </div>
+          </div>
+          <div class="col-6">
+            <label for="nov-expenses" class="form-label visually-hidden">Expenses</label>
+            <div class="input-group">
+              <span class="input-group-text">Expenses</span>
+              <input id="nov-expenses" type="number" class="form-control" placeholder="0.00" aria-label="November expenses" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- December -->
+    <div class="col-12 col-md-6">
+      <div class="p-3 border rounded h-100">
+        <h3 class="h5">December</h3>
+        <div class="row g-2 align-items-end">
+          <div class="col-6">
+            <label for="dec-income" class="form-label visually-hidden">Income</label>
+            <div class="input-group">
+              <span class="input-group-text">Income</span>
+              <input id="dec-income" type="number" class="form-control" placeholder="0.00" aria-label="December income" />
+            </div>
+          </div>
+          <div class="col-6">
+            <label for="dec-expenses" class="form-label visually-hidden">Expenses</label>
+            <div class="input-group">
+              <span class="input-group-text">Expenses</span>
+              <input id="dec-expenses" type="number" class="form-control" placeholder="0.00" aria-label="December expenses" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+  </div>
+
+  <div class="tab-pane fade p-3" id="chart" role="tabpanel" aria-labelledby="chart-tab">
+    <!-- Chart canvas: Chart.js will draw here -->
+    <div class="ratio ratio-16x9">
+      <canvas id="monthlyChart" aria-label="Monthly income and expenses chart" role="img"></canvas>
+    <!--Boostrap button with the label "Download"-->
+    <div class="text-end">
+      <button class="btn btn-primary" id="downloadChart">Download</button>
+    </div>
+    </div>
+  </div>
+  </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Load chart logic from external file -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
