@@ -162,7 +162,7 @@
 					const hasMin = username.length >= minLen;
 					const hasUpper = /[A-Z]/.test(username);
 					// special characters: anything not alphanumeric (you can adjust the set)
-					const hasSpecial = /[^A-Za-z0-9]/.test(username);
+					const hasSpecial = /[^A-Za-z0-9~]/.test(username);
 
 					if (!hasMin) return { valid: false, reason: `Must be at least ${minLen} characters long` };
 					if (!hasUpper) return { valid: false, reason: 'Must contain at least one uppercase letter' };
